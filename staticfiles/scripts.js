@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     const cookiesMessage = document.getElementById("cookiesMessage");
     const acceptCookiesButton = document.getElementById("acceptCookies");
+    const learnMoreLink = document.getElementById("learnMoreLink");
+    const learnMoreSection = document.getElementById("learnMoreSection");
 
     // Show the cookies message with animation
     setTimeout(() => {
@@ -17,8 +19,9 @@ document.addEventListener("DOMContentLoaded", () => {
         document.cookie = "cookiesAccepted=true; max-age=31536000; path=/";
     });
 
-    // Check if cookies have been accepted
-    if (document.cookie.includes("cookiesAccepted=true")) {
-        cookiesMessage.style.display = "none";
-    }
+    // Show Learn More section
+    learnMoreLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        learnMoreSection.style.display = "block";
+    });
 });

@@ -68,14 +68,21 @@ header {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    max-width: 80%; /* Adjust to your preference */
 }
 
-.cookies-message.active {
-    opacity: 1;
+.cookies-message .btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.cookies-message .btn:hover {
+    background-color: #45a049;
 }
