@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TJK Auto Transportation</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <!-- Header with Logo and Company Name -->
+    <header>
+        <div class="logo-container">
+            <img src="{% static 'media/logo.png' %}" alt="TJK Auto Transportation Logo" class="logo">
+            <h1>TJK Auto Transportation</h1>
+        </div>
+    </header>
+
+    <!-- Background Image Section -->
+    <section class="background-section">
+        <div class="background-content">
+            <div class="contact-info">
+                <h2>Where you find Transparency</h2>
+                <h2>Your Trusted Partner for Auto Transport</h2>
+                <p>Email: <a href="mailto:admin@tjkauto.net" class="contact-link">admin@tjkauto.net</a></p>
+                <p>Phone: <a href="tel:+12675260708" class="contact-link">+1 (267) 526-07-08</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cookies Acceptance Message -->
+    <div class="cookies-message" id="cookiesMessage">
+        <p>We use cookies to ensure you get the best experience on our website. By continuing to use this website, you agree to our use of cookies, including "__utmb" cookies. <a href="#" id="learnMoreLink">Learn More</a> <button id="acceptCookies" class="btn">Accept</button></p>
+        <div id="learnMoreSection" style="display: none;">
+            <p>Cookies are small text files that are stored on your device when you visit a website. They are widely used to make websites work more efficiently and to provide information to the owners of the site.</p>
+            <p>Analytics cookies, including "__utmb" cookies, are used to track how you interact with our website. This helps us understand how users engage with our content and allows us to improve the website based on this information. All data collected is anonymized and cannot be used to identify you personally.</p>
+            <p>To learn more about how we use cookies and your options for managing them, please read our Cookie Policy</a>.</p>
+        </div>
+    </div>
+
+    <script src="{% static 'scripts.js' %}"></script>
+</body>
+</html>
+

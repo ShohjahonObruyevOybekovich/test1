@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TJK Auto Transportation</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="{% static 'media/logo.png' %}" alt="TJK Auto Transportation Logo" class="logo">
+            <h1>TJK Auto Transportation</h1>
+        </div>
+    </header>
+
+    <section>
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:admin@tjkauto.net" class="contact-link">admin@tjkauto.net</a></p>
+            <p>Phone: <a href="tel:+12675260708" class="contact-link">+1 (267) 526-07-08</a></p>
+        </div>
+    </section>
+
+    <!-- Include any additional contact information or forms here -->
+
+    <script src="{% static 'scripts.js' %}"></script>
+</body>
+</html>
